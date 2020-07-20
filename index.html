@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<!--copy-->
+<!-- Latest compiled and minified CSS -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+   body {
+      font-family: 'Raleway', sans-serif;
+      font-size: 14px;
+   }
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+
+  <!----------------------------------- JAVASCRIPTS -------------------------------->
+<script>
+  // Get the video
+var video = document.getElementById("myVideo");
+</script>
+
+<!-------------------------------------- CSS ------------------------------------->
+<style>
+
+  /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+</style>
+
+
+<!--NAV BAR-->
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html">Collective Memory</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="services.html">Services</a>
+    </li>
+
+<li class="nav-item">
+      <a class="nav-link" href="gallery.html">Gallery</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="about.html">About us</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+
+  </ul>
+
+</nav>
+
+  </head>
+
+
+<!--section 1 end-->
+<!---------------------------------     HTML codes   --------------------------------->
+<body>
+  <section>
+<!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="image/vid.mp4" type="video/mp4">
+</video>
+
+</section>
+
+<!--section 2-->
+
+<div style="text-align: center; margin: auto;">
+
+  <section>
+  <div class="container">  <!-- this code is required so that everything fits inside your grid-->
+  <br>
+  <br>
+  <!-- Grid code -->
+
+  <!-- two equal columns -->
+  <!-- column 1 is on left side with an image-->
+  <!-- column 2 is on right side with Text content-->
+  <!-- 2 columns = 2 divs -->
+  <div class="row">
+    <div class="col">   <!-- column 1-->
+      <img src="image/about.png" class="img-fluid" width="460" height="345">
+    </div>              <!-- column 1 ends -->
+
+    <div class="col">   <!-- column 2 -->
+      <h1>LETTER FROM THE FOUNDERS</h1>
+      <br>
+      <p id="text-show" style="overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 1;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;">In our understanding, collective memory is far from an intangible thing.
+        It is touchable. Visible. Usable. Edible. Smell-able. Collectable and Memorable. The concept comes from a collective cultural mindset that values local identity over global homogenization, originality over cliche, and quality over quantity.
+      </p>
+      <br>
+      <br>
+      <button type="button" class="btn btn-dark" onclick="myFunction()">Read More</button>
+    </div>             <!-- column 2 ends -->
+  </div>
+  </div>
+
+
+  </section>       <!-- about us end-->
+
+  <section>        <!-- services-->
+    <br>
+    <div class="container-fluid">
+      <h1 class="text-center pt-5"> Collective Members </h1>
+      <hr class="w-50 mx-auto pt-3">
+
+      <!--edit-->
+
+    <div class="row mb-4 ml-4 mr-4">
+
+
+  <!-- section card 1 -->
+  <div class="col-lg-4">  <!-- 12/3 = 4, because i need 3 stuffs to be displayed in one line-->
+  <div class="card" style="width:auto">
+    <img class="card-img-top" src="image/about1.png" class="img-fluid">
+    <div class="card-body">
+      <h4 class="card-title">Explore</h4>
+      <p class="card-text">Very Ngon Homewares</p>
+      <a href="index.html" class="btn btn-primary">View more</a>
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- section card 2 -->
+  <div class="col-lg-4">  <!-- 12/3 = 4, because i need 3 stuffs to be displayed in one line-->
+  <div class="card" style="width: auto">
+    <img class="card-img-top" src="image/about2.png" class="img-fluid">
+    <div class="card-body">
+      <h4 class="card-title">Explore</h4>
+      <p class="card-text">Eugine Darge</p>
+      <a href="index.html" class="btn btn-primary">View more</a>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- section card 3 -->
+
+
+  <div class="col-lg-4">  <!-- 12/3 = 4, because i need 3 stuffs to be displayed in one line-->
+  <div class="card" style="width:auto">
+    <img class="card-img-top" src="image/about3.png" class="img-fluid">
+    <div class="card-body">
+      <h4 class="card-title">Explore</h4>
+      <p class="card-text">Saigon Charlie's</p>
+      <a href="index.html" class="btn btn-primary">View more</a>
+    </div>
+  </div>
+  </div>
+    </div>
+  </section>          
+
+  <!-- close section 3-->
+
+  <!-- Gallery code-->
+
+  <section>
+    <br>
+      <h1 class="text-center pt-5"> Gallery </h1>
+      <hr class="w-50 mx-auto pt-5">
+  <!-- start edit-->
+  <div class="row mb-4 ml-4 mr-4">
+  <div class="col-lg-4 pt-5">
+    <img src="image/gallery1.png" class="img-fluid" width="400" height="320">
+  </div>   <!--image 1-->
+
+  <div class="col-lg-4 pt-5 mx-auto">
+    <img src="image/gallery2.png" class="img-fluid" width="400" height="320">
+  </div>    <!--image 1-->
+
+  <div class="col-lg-4 pt-5 mx-auto">
+    <img src="image/gallery3.png" class="img-fluid" width="400" height="320">
+  </div>    <!--image 1-->
+
+  <br>
+
+  <div class="col-lg-4 pt-5 mx-auto">
+    <img src="image/gallery2.png" class="img-fluid" width="400" height="320">
+  </div>   <!--image 1-->
+
+  <div class="col-lg-4 pt-5 mx-auto">
+    <img src="image/gallery3.png" class="img-fluid" width="400" height="320">
+  </div>    <!--image 1-->
+
+  <div class="col-lg-4 pt-5 mx-auto">
+    <img src="image/gallery1.png" class="img-fluid" width="400" height="320">
+  </div>    <!--image 1-->
+
+  </div>
+  </section>
+
+  <!-- gallery end-->
+
+  <!-- contact start-->
+  <section>
+    <br>
+  <div class="container">  <!-- this code is required so that everything fits inside your grid-->
+
+  <h1 class="text-center pt-3" >Get in touch with us</h1>
+  <hr class="w-50 mx-auto pt-2">
+  <br>
+
+  <!-- form for imail & mobile numbers-->
+
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" class="form-control" placeholder="Enter email" id="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">mobile numbers:</label>
+      <input type="password" class="form-control" placeholder="Enter mobile numbers" id="pwd">
+    </div>
+    
+      <!-- a message box-->
+
+      <div class="form-group">
+    <label for="comment">Comment:</label>
+    <textarea class="form-control" rows="5" id="comment"></textarea>
+  </div>
+
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </form>
+
+ </section>
+
+</div>
+
+<footer style="text-align: center;margin-top: 100px;margin-bottom: 200px;">
+  <div>
+    <a href="https://www.facebook.com/htrang2908" style="margin-right: 30px;"><img src="image/fb.png" alt="fb"></a>
+    <a href="index.html" ><img src="image/tw.png" alt="tw"></a>
+    <a href="index.html" style="margin-left: 30px;" ><img src="image/ins.png" alt="is"></a>
+  </div>
+  <h5 style="margin-top:30px; text-transform: uppercase; ">12 NhA Chung, HAng TrOng, HoAn KiEm, HA NOi </h5>
+  <h6 style="margin-top:30px ">© 2020 Collective Memory. All Rights Reserved.</h6>
+</footer>
+
+<script>
+
+function myFunction() {
+  // document.getElementById("text-show").css('-webkit-line-clamp', '10')
+  document.getElementById('text-show').style.cssText = '-webkit-line-clamp: 10';
+}
+
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+<!--copy-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+   body {
+      font-family: 'Raleway', sans-serif;
+      font-size: 14px;
+   }
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+
+
+
+<!--NAV BAR-->
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html">Collective Memory</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="services.html">Services</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="gallery.html">Gallery</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="about.html">About us</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+
+  </ul>
+
+</nav>
+
+  </head>
+
+  <!-- Cararsoul bg-->
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/homebanner.png" class="img-fluid" width="1300" height="550">
+        <div class="carousel-caption">
+          <h2>Collective Memory</h3>
+          <p>A House Of Curious</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="image/homebanner.png" class="img-fluid" width="1300" height="550">
+        <div class="carousel-caption">
+          <h2>Collective Memory</h3>
+          <p>A House Of Curious</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="image/homebanner.png" class="img-fluid" width="1300" height="550">
+        <div class="carousel-caption">
+          <h2>Collective Memory</h3>
+          <p>A House Of Curious</p>
+        </div>   
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+<!--section 1 end-->
+
+<!--section 2-->
+<body>
+ <br>
+ <br>
+<section style="margin-bottom: 100px;">
+    <div class="container">  <!-- this code is required so that everything fits inside your grid-->
+        <h1 class="text-center pt-3">LETTER FROM THE FOUNDERS</h1>
+        <hr class="w-50 mx-auto pt-2">
+        <h2 class="text-center pt-3">Collective memory (noun): the memory of
+a group of people, passed from one generation to the next.</h2>
+<br>
+<br>
+<p>In our understanding, collective memory is far from an intangible thing.
+It is touchable. Visible. Usable. Edible. Smell-able. Collectable and Memorable. The concept comes from a collective cultural mindset that values local identity over global homogenization, originality over cliche, and quality over quantity.
+</p>
+<p>Founded by a Vietnamese duo of travel writer and photographer, the concept for Collective Memory emerged from a shared enthusiasm for Vietnamese culture. While constantly on the move for assignments, the creators use these opportunities to scour the country for the best products that Vietnam can offer.
+</p>
+<p>The concept brings together authentic and high-quality brands under one roof. While individually each brand has its own unique story, a collective of brands forms a larger narrative about a country that is constantly evolving.
+</p>
+<p>The concept brings together authentic and high-quality brands under one roof. While individually each brand has its own unique story, a collective of brands forms a larger narrative about a country that is constantly evolving.
+</p>We warmly welcome you to swing by, dig in and discover.
+<p>
+    </div>
+</section>
+
+<style>
+.mySlides {display:none;}
+</style>
+
+<section>
+<div class="slideshow-container">
+  
+  <img class="mySlides" src="image/homebanner.png" style="display:block;margin:auto" width="800" height="533">
+  <img class="mySlides" src="image/about.png" style="display:block;margin:auto" width="800" height="533">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</section>
+
+<footer style="text-align: center;margin-top: 100px;margin-bottom: 200px;">
+  <div>
+    <a href="https://www.facebook.com/htrang2908" style="margin-right: 30px;"><img src="image/fb.png" alt="fb"></a>
+    <a href="/" ><img src="image/tw.png" alt="tw"></a>
+    <a href="/" style="margin-left: 30px;" ><img src="image/ins.png" alt="is"></a>
+  </div>
+  <h5 style="margin-top:30px; text-transform: uppercase; ">12 NhA Chung, HAng TrOng, HoAn KiEm, HA NOi </h5>
+  <h6 style="margin-top:30px ">© 2020 Collective Memory. All Rights Reserved.</h6>
+</footer>
+</body>
+
+</html>
+
